@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: #d0d0d0;
+  font-family: "Courier New", Courier, monospace;
+}
+
+h1.title {
+  text-align: center;
+  font-size: xx-large;
+}
+
+body {
+  width: min(80%, 70rem);
+  justify-self: center;
+  padding: 2rem 0;
+  justify-content: center;
+}
+
+.image-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem;
+  width: 20rem;
+}
+
+.image-box img {
+  width: 20rem;
+  padding: 0 0 2ch;
+  border-radius: 3ch;
+}
+
+.text-image-combo {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: #4da3ff;
+}
+
+#sorting-algorithm-canvas {
+  width: 100%;
+  aspect-ratio: 5/4;
+}
+#physics-canvas {
+  width: 100%;
+  aspect-ratio: 5/4;
+}
+
+@media (max-width: 830px) {
+  .text-image-combo {
+    flex-direction: column;
+  }
+  .image-box {
+    width: 100%;
+  }
+  .image-box img {
+    width: 100%;
+  }
+  #donut {
+    font-size: xx-small;
+    width: fit-content;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background: #202020;
+    color: #e0e0e0;
+  }
+  a {
+    color: #0066cc;
+  }
+}
+
+h2 {
+  padding: 2rem 0 1rem;
+}
+
+p {
+  font-size: large;
+  padding: 1ch 0;
+}
+
+ul {
+  padding: 1rem 0;
+}
+
+li {
+  font-size: large;
+  padding: 0.2rem;
+}
+
+h4 {
+  font-size: larger;
+}
+
+#n-body-input {
+  display: flex;
+  align-items: center;
+}
+
+input#num-bodies {
+  height: 3ch;
+  width: 6ch;
+}
+
+button {
+  padding: 0.2rem 0.5rem;
+  border: none;
+  border-radius: 1ch;
+}
+
+.bonus-stuff {
+  width: min-content;
+  justify-self: center;
+}

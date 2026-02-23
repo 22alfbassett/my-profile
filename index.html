@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css" />
+    <script type="module" src="donut.js" defer></script>
+    <script type="module" src="sorting.js" defer></script>
+    <script type="module" src="physics.js" defer></script>
+  </head>
+
+  <body>
+    <h1 class="title">My Profile</h1>
+    <div class="text-image-combo">
+      <div>
+        <h2>Who are you?</h2>
+        <p>
+          My name is Alfred Bassett, but I go by my middle name, David. I'm a
+          young (21 year old) software developer yearning to learn more! I
+          currently live in Wisconsin, but I'm excited to see where Computer
+          Science will take me!
+        </p>
+        <h2>Why do you like software?</h2>
+        <p>
+          When I was a kid, I really liked video games. While playing a game on
+          an NES Emulator, I discovered the hex editor and had fun messing
+          around with it. Being a kid, I wanted to learn more about what those
+          numbers meant and how to make changes to do things. That kinda paved
+          the way to where I am today.
+        </p>
+      </div>
+      <div class="image-box">
+        <img src="./images/20250313_193759.jpg" alt="madison-lake" />
+        <sub>Lake Mendota (Madison, Wisconsin)</sub>
+      </div>
+    </div>
+    <div class="text-image-combo">
+      <div class="image-box">
+        <img src="./images/20240306_025452.jpg" alt="Art Piece" />
+        <sub>My magnum opus from my art class</sub>
+      </div>
+      <div>
+        <h2>What exactly do you know?</h2>
+        <p>
+          I double-majored in Computer Science and Computer Engineering at the
+          University of Wisconsin-Madison. I recently graduated this December. I
+          enjoyed both practical and theoretical software as well as the actual
+          hardware and circuitry used to power code. I went as high level as
+          React and Python to as low level as assembly (and Verilog, if that
+          counts). In terms of practical computer science, I took courses
+          regarding Operating Systems, Compilers, Frontend Development, and
+          Artificial Intelligence. For theoretical computer science, I took
+          Discrete Math and an Algorithms Class. For hardware, I synthesized
+          fpga's, simulated my own CPU hardware, designed custom PCBs, and did
+          some embedded stuff on a couple of Infineon PSoC6's.
+        </p>
+        <h2>What's your favorite part of coding? Why do you do it?</h2>
+        <p>
+          Computer Science is like a treasure trove that changes and grows
+          exponentially over time. I don't think any other majors are quite like
+          that (besides economics, medicine, and STEM). Since I really like both
+          learning and exploring new things, I seem to fit right in! It also
+          helps that I really like math and science. To that point, I think I
+          was one of probably 10 people in my algorithms class that actually
+          enjoyed what we did!
+        </p>
+      </div>
+    </div>
+
+    <h2>
+      What languages do you know / What's your preferred choice of language?
+    </h2>
+    <p>I know <i>quite a lot</i> of languages. Just to list a few:</p>
+    <ul>
+      <li>C/C++</li>
+      <li>Python</li>
+      <li>Java</li>
+      <li>JavaScript/TypeScript</li>
+      <li>HTML/CSS</li>
+      <li>Rust</li>
+      <li>Some Bash</li>
+      <li>SQL (if that counts)</li>
+      <li>...there's probably more that I'm forgetting</li>
+    </ul>
+    <p>
+      I tend to think that if you understand common coding paradigms,
+      programming languages come very naturally as a result.
+    </p>
+    <p>
+      I also don't really have a favorite coding language. What I use changes
+      from project to project. If I care more about performance and want to
+      reduce binary size, I'll use C or C++. If I just want to write up code
+      quickly and don't really care about how well the CPU runs it, I'll use
+      Python. If I want to be super careful about my memory usage and don't mind
+      'fighting the compiler', I'll use Rust. For frontend stuff, Svelte has
+      really been growing on me. I like how it feels super simiar to vanilla
+      while being around 10x as powerful (without a virtual DOM, too)!
+    </p>
+    <div class="text-image-combo">
+      <div>
+        <h2>What are some of your projects?</h2>
+        <p>
+          There's been a lot of fun projects I've done. Unfortunately, I don't
+          think I can legally share the source code for most of them, due to
+          university and company policy. But as some examples:
+        </p>
+        <h4>Some cool school projects:</h4>
+        <ul>
+          <li>
+            An interpreter and a compiler for a custom programming language
+            (Java)
+          </li>
+          <li>
+            A CPU, with caching and pipelining, for a custom architecture
+            (Verilog)
+          </li>
+          <li>
+            A frontend for a Chatroom Web/Mobile App (React/React Native, the
+            backend was provided)
+          </li>
+          <li>
+            A desktop GUI application to find and give the fastest route from
+            one place on campus to another (Java/JavaFX)
+          </li>
+          <li>
+            A computer player that is really good at
+            <a href="https://en.wikipedia.org/wiki/Teeko">Teeko</a> (Python,
+            minimax with alpha/beta pruning)
+          </li>
+          <li>
+            A
+            <a href="https://en.wikipedia.org/wiki/LeNet#Net-1_to_Net-5"
+              >LeNet-5</a
+            >
+            clone (Python/Pytorch, trained with CIFAR100)
+          </li>
+          <li>... More cool stuff that I'm forgetting</li>
+        </ul>
+        <h4>Some cool side/hobby/personal projects:</h4>
+        <ul>
+          <li>
+            A cycle-accurate NES emulator for a few common mappers (C++, lost to
+            SSD death)
+          </li>
+          <li>
+            The website for New Hope Center, Inc. (Vue frontend, Node backend)
+          </li>
+          <li>
+            Stenography Demos for the UW-Madison CyberSecurity club (Python)
+          </li>
+          <li>
+            PR's regarding testing and CI for the UW-Madison Quantum Compiler
+            Group (Python)
+          </li>
+          <li>A terminal app for viewing .obj 3d files (C++)</li>
+          <li>... and more to come!</li>
+        </ul>
+      </div>
+      <div class="image-box">
+        <img src="./images/Snapchat-930937017.jpg" alt="NES Emulator" />
+        <sub
+          >Someone forgot to increment the y-index for the PPU and used bgr
+          instead of rgb!</sub
+        >
+      </div>
+    </div>
+    <h2>What have you been doing recently?</h2>
+    <p>
+      Recently, I've been on the job hunt! Because my interests in CS are broad,
+      I'm open to quite a lot, and I'm excited to see what I can learn and
+      contribute to in a work environment!
+    </p>
+    <h2>What do you think about AI?</h2>
+    <ul>
+      <li>
+        Coding with an AI assistant is good, if done correctly. However, I
+        personally have had many more bad experiences than good with the
+        technology, so I tend to rely on it very seldomly and particularly.
+        While coding assistants can be really helpful at times, thinking some
+        model can understand an entire codebase better than a human is
+        ridiculous. It's a tool, but not an all-in-one tool. If you build a
+        house with just a hammer, something will eventually go seriously wrong.
+      </li>
+      <li>
+        Offloading any sort of learning experience to an AI defeats the purpose!
+        Near the end of my CS program, some classes were encouraging us to use
+        AI when coding. While I think that, if used correctly, it can clarify
+        confusing topics and automate a lot of boilerplate, it can easily
+        diminish the amount of information you take away from anything. You'll
+        never learn anything if you never try it yourself!
+      </li>
+    </ul>
+    <div class="text-image-combo">
+      <div>
+        <h2>What else do you like?</h2>
+        <p>
+          I really like high-level math and modern physics! While I didn't take
+          too many classes on it in my coursework, I really like learning how
+          the world around us works!
+        </p>
+        <p>
+          I also really like tennis! I play a lot with my brother, and it's a
+          great passtime when the weather is warmer.
+        </p>
+        <p>
+          I'm a big fan of nature! I like walking outside a lot and taking it
+          all in. I really love the wintertime, especially when it's snowing
+          (which always happens in Wisconsin). It's pretty crazy how beautiful
+          the earth we live on can get.
+        </p>
+      </div>
+      <div class="image-box">
+        <img src="./images/20251222_220605.jpg" alt="Snowman" />
+        <sub>I got bored after finals, so I made a snowman!</sub>
+      </div>
+    </div>
+
+    <h2>Some cool stuff</h2>
+    <div class="bonus-stuff">
+      <pre id="donut"></pre>
+      <p>A Torus</p>
+      <canvas id="sorting-algorithm-canvas" style="border: 1px solid #302525">
+        Your browser does not support the canvas element.
+      </canvas>
+      <br />
+      <select name="sorting-algorithm" id="sorting-algorithm">
+        <option value="selection">Selection Sort</option>
+        <option value="merge">Merge Sort</option>
+        <option value="heap">Heap Sort</option>
+        <option value="quick">Quick Sort</option>
+      </select>
+      <button id="sorting-button">Play</button>
+      <p>Sorting algorithms</p>
+      <br />
+      <canvas id="physics-canvas" style="border: 1px solid #302525">
+        Your browser does not support the canvas element.
+      </canvas>
+      <br />
+      <div id="n-body-input">
+        <p>n=</p>
+        <input type="number" name="num-bodies" id="num-bodies" value="4" />
+      </div>
+      <button id="reset-physics">Reset</button>
+      <p>N-body simulation</p>
+    </div>
+  </body>
+</html>
