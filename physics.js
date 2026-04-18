@@ -56,7 +56,7 @@ function renderPlanets(delta, ctx, screen_width, screen_height) {
       const distanceSquared = dx * dx + dy * dy + dz * dz + 0.01;
       const distance = Math.sqrt(distanceSquared);
 
-      if (distance === 0) return;
+      if (distance === 0) continue;
 
       const forceMagnitude = (G * p1.mass * p2.mass) / distanceSquared;
 
@@ -102,6 +102,10 @@ function renderPlanets(delta, ctx, screen_width, screen_height) {
 
 const physicsCanvas = document.getElementById("physics-canvas");
 if (physicsCanvas instanceof HTMLCanvasElement) {
+  new ResizeObserver(() => {
+    physicsCanvas.width = physicsCanvas.clientWidth;
+    physicsCanvas.height = physicsCanvas.clientHeight;
+  }).observe(physicsCanvas);
   const ctx = physicsCanvas.getContext("2d");
   if (ctx) {
     const deltaMs = 1000 / 60;
