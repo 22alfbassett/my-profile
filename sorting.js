@@ -330,6 +330,12 @@ async function sortAlgorithm(sortingAlgorithm) {
 let canvas = document.getElementById("sorting-algorithm-canvas");
 
 if (canvas instanceof HTMLCanvasElement) {
+  new ResizeObserver(() => {
+    if (canvas instanceof HTMLCanvasElement) {
+      canvas.width = canvas.clientWidth;
+      canvas.height = canvas.clientHeight;
+    }
+  }).observe(canvas);
   sortingCanvas = canvas;
   let playButton = document.getElementById("sorting-button");
   let sortingAlgorithm = document.getElementById("sorting-algorithm");
@@ -345,10 +351,10 @@ if (canvas instanceof HTMLCanvasElement) {
       try {
         await sortAlgorithm(sortingAlgorithm.value);
       } catch (
-        /**
-         * @type {any}
-         */
-        e
+      /**
+       * @type {any}
+       */
+      e
       ) {
         if (e.message !== "Cancelled") throw e;
       }
