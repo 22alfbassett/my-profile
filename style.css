@@ -41,7 +41,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #4da3ff;
+  color: #0066cc;
 }
 
 #sorting-algorithm-canvas {
@@ -75,7 +75,7 @@ a {
     color: #e0e0e0;
   }
   a {
-    color: #0066cc;
+    color: #4da3ff;
   }
 }
 
